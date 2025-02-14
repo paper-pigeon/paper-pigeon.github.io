@@ -44,8 +44,8 @@ img.dibley {
     max-width: 100%
 }
 
-/*grid id = wrapper parent to grid*/
-#grid{
+/* Target the class .wrapper instead of #grid */
+.wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -65,7 +65,6 @@ img.dibley {
 }
 
 /*box# id = style inside individual / specific grid items*/
-
 #box1{
     grid-column: 1 / span 3;
     grid-row: 1 / 3;
