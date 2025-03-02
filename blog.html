@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Stewart Misha: 225</title>
+    <title>Blog: Misha Stewart</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
     <!-- Bootstrap core CSS -->
     <link href="css/styles.css" rel="stylesheet">
@@ -26,60 +26,67 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="grid.html">Grid</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="carousel.html">Carousel</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="guestbook.html">Guestbook</a>
-                </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="grid.html">Grid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carousel.html">Carousel</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="guestbook.html">Guestbook</a>
+            </li>
         </ul>
     </div>
 </nav>
 
 <main role="main" class="container-fluid">
-    <div id="h1"></div>
-    <hr class="dashedrule">
-    <div id="img"></div>
-    <div id="content"></div>
+<h2>Blog</h2>
+<hr class="dashedrule">
 
-    <script>
-        const user = {
-            name: 'Misha Stewart',
-            imageUrl: 'images/aboutphoto.jpg',
-            bio: "Hi! My name is Misha. I'm a 24 year old CCO student from Bloomington, Indiana. I love hiking, making art of all kinds, and reading."
-        };
+<section class="blog cards">
+    <article class="b-card">
+        <div class="card-content">
+            <h4 class="card-title">Post 1</h4>
+            <p class="card-text">This is the first post.</p>
+            <a href="#" class="card-link">Read more →</a>
+        </div>
+    </article>
+    <article class="b-card">
+        <div class="card-content">
+            <h4 class="card-title">Post 2</h4>
+            <p class="card-text">This is the second post.</p>
+            <a href="#" class="card-link">Read more →</a>
+        </div>
+    </article>
+    <article class="b-card">
+        <div class="card-content">
+            <h4 class="card-title">Post 3</h4>
+            <p class="card-text">This is the third post.</p>
+            <a href="#" class="card-link">Read more →</a>
+        </div>
+    </article>
+    <article class="b-card">
+        <div class="card-content">
+            <h4 class="card-title">Post 4</h4>
+            <p class="card-text">This is the fourth post.</p>
+            <a href="#" class="card-link">Read more →</a>
+        </div>
+    </article>
+</section>
 
-        // Step one - Create a React element
-
-        const h1Element = React.createElement('h1', null, user.name)
-        const aboutimgElement = React.createElement('img', 
-            {src: user.imageUrl,
-             alt: "A headshot photo of Misha",
-             className: 'about-image'
-            });
-        const bioElement = React.createElement('p', { className: 'bio-text'}, user.bio)
-
-        // Step 2: Render the React element
-        ReactDOM.render(h1Element, document.getElementById('h1'));
-        ReactDOM.render(aboutimgElement, document.getElementById('img'));
-        ReactDOM.render(bioElement, document.getElementById('content'));
+</main>
 
 
-    </script>
 
-</main><!-- /.container -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
